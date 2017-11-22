@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<h1>Login</h1>
+
+{% if error %}
+    NOT EVEN CLONE
+{% endif %}
+
+<form action="{{ path('login') }}" method="post">
+
+    <label for="username">Username:</label>
+    <input type="text" id = username" name = "_username" value = "{{ last_username }}"/>
+
+    <label for="password">Password:</label>
+    <input type="text" id = password" name = "_password">
+
+    <button type="submit">login</button>
+
+<<<<<<< HEAD
+{% endblock %}
+=======
+{% endblock %}
+
+>>>>>>> 40d4cc722575d980ba1349209f96d28138a1ec46
